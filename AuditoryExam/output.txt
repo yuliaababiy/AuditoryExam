@@ -1,0 +1,3 @@
+Number: 201 Area: 30 NumTwoTable: 6 NumThreeTable: 9
+Number: 301 Area: 45 NumTwoTable: 3 NumThreeTable: 6
+Number: 101 Area: 88 NumTwoTable: 5 NumThreeTable: 5

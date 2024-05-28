@@ -1,19 +1,24 @@
 #include "Auditory.h"
 
 Auditory::Auditory(int number, int area, int numTwoTable, int numThreeTable)
-	: number(number), area(area), numTwoTable(numTwoTable), numThreeTable(numThreeTable){}
+	: number(number), area(area), numTwoTable(numTwoTable), numThreeTable(numThreeTable) {}
 
 void Auditory::displayIntoFile(ostream& out)
 {
-	out << "Number: " << number << "Area: " << area << "NumTwoTable: " << numTwoTable 
-		<< "NumThreeTable: " << numThreeTable << endl;
- }
+	out << "Number: " << number << " Area: " << area << " NumTwoTable: " << numTwoTable
+		<< " NumThreeTable: " << numThreeTable << endl;
+}
 
 
 void Auditory::display()
 {
-	cout << "Number: " << number << "Area: " << area << "NumTwoTable: " << numTwoTable
-		<< "NumThreeTable: " << numThreeTable << endl;
+	cout << "Number: " << number << " Area: " << area << " NumTwoTable: " << numTwoTable
+		<< " NumThreeTable: " << numThreeTable << endl;
+}
+
+void Auditory::saveWithSpaces(ostream& out)
+{
+	out << "Auditory: " << number << " " << area << " " << numTwoTable << " " << numThreeTable << endl;
 }
 
 int Auditory::getNumber()
@@ -31,7 +36,7 @@ int Auditory::getArea()
 	return area;
 }
 
-int Auditory::getFloor() 
+int Auditory::getFloor()
 {
 	return number / 100;
 }

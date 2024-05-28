@@ -18,12 +18,8 @@ public:
 	int getNumber();
 	int getArea();
 	int getFloor();
+	virtual void saveWithSpaces(ostream& out);
 
 };
-
-
-
-
-
 #endif // ! AUDITORY
 

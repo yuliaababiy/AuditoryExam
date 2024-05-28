@@ -5,13 +5,17 @@ MultAuditory::MultAuditory(int number, int area, int numTwoTable, int numThreeTa
 
 void MultAuditory::displayIntoFile(ostream& out)
 {
-	out << " Number: " << number << " Area: " << area << " NumTwoTable: " << numTwoTable
+	out << "Number: " << number << " Area: " << area << " NumTwoTable: " << numTwoTable
 		<< " NumThreeTable: " << numThreeTable << " NameEquipment:"<< nameEquipment << endl;
 }
 
-
 void MultAuditory::display()
 {
-	cout << " Number: " << number << " Area: " << area << " NumTwoTable: " << numTwoTable
+	cout << "Number: " << number << " Area: " << area << " NumTwoTable: " << numTwoTable
 		<< " NumThreeTable: " << numThreeTable << " NameEquipment:" << nameEquipment << endl;
+}
+
+void MultAuditory::saveWithSpaces(ostream& out)
+{
+	out << "MultAuditory: " << number << " " << area << " " << numTwoTable << " " << numThreeTable <<" "<<nameEquipment<< endl;
 }

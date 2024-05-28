@@ -10,8 +10,9 @@ protected:
 	string nameEquipment;
 public :
 	MultAuditory(int number, int area, int numTwoTable, int numThreeTable, string nameEquipment);
-	virtual void displayIntoFile(ostream& out);
-	virtual void display();
+	void displayIntoFile(ostream& out) override;
+	void saveWithSpaces(ostream& out) override;
+	void display() override;
 	void addNameEquipment(string newNameEquipment);
 };
 #endif // !MULTAUDITORY
