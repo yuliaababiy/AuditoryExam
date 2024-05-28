@@ -117,6 +117,7 @@ int main()
 		}
 		else if (choice == 4)
 		{
+			
 			loadFromFile(auditories, "input.txt");
 			Auditory* theBiggest = new Auditory(0, 0, 0, 0);
 			for (auto a : auditories)
@@ -147,6 +148,16 @@ int main()
 		}
 		else if (choice == 6)
 		{
+			// для кожної аудиторії на 2 поверсі, добавте 10 квадратних метрів до площі
+			//loadFromFile(auditories, "input.txt");
+			//for (auto a : auditories)
+			//{
+			//	if (a->getFloor() == 2)
+			//	{
+			//		a->setArea(a->getArea() + 10);
+			//	}
+			//}
+
 			loadFromFile(auditories, "input.txt");
 			int totalPlacesOfSecondFloor = 0;
 			for (auto a : auditories)

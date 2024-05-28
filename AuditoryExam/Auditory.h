@@ -18,6 +18,7 @@ public:
 	int getNumber();
 	int getArea();
 	int getFloor();
+	void setArea(int newArea);
 	virtual void saveWithSpaces(ostream& out);
 
 };

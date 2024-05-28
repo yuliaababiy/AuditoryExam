@@ -26,6 +26,11 @@ int Auditory::getNumber()
 	return number;
 }
 
+void Auditory::setArea(int newArea)
+{
+	area = newArea;
+}
+
 int Auditory::getNumberOfPlaces()
 {
 	return numTwoTable * 2 + numThreeTable * 3;
